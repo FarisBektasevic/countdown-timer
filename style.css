@@ -1,0 +1,132 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturater-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --mostly-black-blue: hsl(234, 17%, 12%);
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+    background-image: url(images/bg-stars.svg);
+    background-color: var(--very-dark-blue);
+}
+
+h1 {
+    color: var(--white);
+    letter-spacing: 4px;
+    word-spacing: 6px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.stars {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.stars img {
+    width: 100%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.countdown-box h3 {
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.countdown-box div {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   width: 8rem;
+   height: 8rem;
+   border-radius: 5px;
+   margin: 0 0.8rem;
+   background-color: hsla(237, 18%, 59%, 0.37);
+   margin-bottom: 2rem;
+}
+
+.countdown-box div p {
+    color: var(--soft-red);
+    font-size: 2.5rem;
+}
+
+.socials {
+    position: absolute;
+    bottom: 5rem;
+    z-index: 1;
+}
+
+.socials ul {
+    display: flex;
+    list-style: none;
+    color: var(--white);
+}
+
+.socials ul li {
+    font-size: 24px;
+    margin: 0 20px;
+    opacity: 0.6;
+}
+
+.hills {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hills img {
+    width: 100%;
+    height: auto;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    position: absolute;
+    bottom: 15px;
+    color: var(--white);
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: var(--soft-red);
+}
+

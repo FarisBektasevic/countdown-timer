@@ -37,4 +37,5 @@ const counting = () => {
     }
 }
 
+counting()
 setInterval(counting, 1000)

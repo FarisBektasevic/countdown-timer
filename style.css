@@ -119,7 +119,8 @@ h1 {
 }
 
 .attribution { 
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
     position: absolute;
     bottom: 15px;
     color: var(--white);
@@ -130,3 +131,55 @@ h1 {
     color: var(--soft-red);
 }
 
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .countdown {
+        margin: 5rem 0;
+    }
+
+    .countdown-box div {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .countdown-box div p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .countdown-box div {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .countdown-box div p {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .countdown {
+        margin: 4rem 0;
+    }
+
+    .countdown-box h3 {
+        font-size: 12px;
+    }
+
+    .socials ul li {
+        font-size: 20px;
+    }
+
+    .attribution {
+        font-size: 9px;
+    }
+}
